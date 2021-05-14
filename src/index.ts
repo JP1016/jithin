@@ -18,13 +18,13 @@ const jithin: Jithin = {
   handle: 'jp1016v1',
   work: [
     { name: 'CodeKeep', website: 'https://codekeep.io' },
-    { name: 'Devzstudio', website: 'https://devzstudio.com' },
-    { name: 'Opensource', website: 'http://jithin.ninja' },
+    { name: 'Twimark', website: 'https://twimark.io' },
+    { name: 'Opensource', website: 'https://jithin.jp1016.now.sh' },
   ],
   twitter: 'https://twitter.com/jp1016v1',
   github: 'https://github.com/jp1016',
-  website: 'https://jithin.ninja',
-  forHire: 'https://jithin.ninja',
+  website: 'https://jithin.jp1016.now.sh/',
+  forHire: 'https://jithin.jp1016.now.sh/',
 };
 
 export default jithin;

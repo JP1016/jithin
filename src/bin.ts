@@ -5,15 +5,16 @@ import jithin from './';
 process.stdout.write(
   colors.white(`
   ${jithin.name} / ${colors.cyan(`@${jithin.handle}`)}${(jithin.forHire &&
-      colors.green(`\n\n  ${colors.bold('Hire me:')}  ${jithin.forHire}`)) ||
+    colors.green(`\n\n  ${colors.bold('Hire me:')}  ${jithin.forHire}`)) ||
     ''}
 
-     ${colors.bold('Work:')}  ${colors.blue(jithin.work.map(({ name }) => name).join(', '))}
+  ${colors.bold('Work:')}  ${colors.blue(jithin.work.map(({ name }) => name).join(', '))}
+  ${colors.bold('Links:')}
+  ${colors.greenBright(jithin.work.map(({ website }) => colors.cyan(website)).join(' '))}
   ${colors.bold('Twitter:')}  ${colors.cyan(jithin.twitter)}
-   ${colors.bold('GitHub:')}  ${colors.cyan(jithin.github)}
+  ${colors.bold('GitHub:')}  ${colors.cyan(jithin.github)}
   ${colors.bold('Website:')}  ${colors.cyan(jithin.website)}
 
-     ${colors.bold('Card:')}  npx ${jithin.handle}
-
+  ${colors.bold('Card:')}  npx ${jithin.handle}
 `)
 );
